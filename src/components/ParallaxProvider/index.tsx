@@ -29,7 +29,7 @@ export class ParallaxProvider extends Component<ParallaxProviderProps, {}> {
 
   componentWillUnmount() {
     // @ts-ignore
-    this.controller = this.controller.destroy();
+    this.controller = this.controller?.destroy();
   }
 
   render() {
